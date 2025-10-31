@@ -1,0 +1,51 @@
+/*variables*/
+:root{
+    /*fonts*/
+    --google: "Google Sans Code", sans-serif;
+    --pixel: "Pixelify Sans", sans-serif;
+    /*sizing*/
+    --small: 8px;
+    --medium: 16px;
+    --large: 20px;
+    --xlarge: 30px;
+    --xxlarge: 40px;
+    --xxxlarge: 90px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+
+}
+
+/*type selectors*/
+html{
+    padding: var(--xxlarge);
+}
+h1{
+    font-family: var(--pixel);
+}
+p{
+    font-family: var(--google);
+}
+
+/*id selectors*/
+#profilePicture{
+    width: var(--xxxlarge);
+    height: var(--xxxlarge);
+    border-radius: 100%
+}
+#profileContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    border: solid;
+    border-radius: var(--small);
+    border-width: var(--small);
+    border-color: black;
+    padding: var(--medium);
+}
+#profileText{
+    max-width: 300px;
+}
