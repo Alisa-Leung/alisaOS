@@ -4,35 +4,53 @@
     --google: "Google Sans Code", sans-serif;
     --pixel: "Pixelify Sans", sans-serif;
     /*sizing*/
+    --xsmall: 4px;
     --small: 8px;
     --medium: 16px;
     --large: 20px;
     --xlarge: 30px;
     --xxlarge: 40px;
     --xxxlarge: 90px;
+    /*colors*/
+    --navy: #1f2a44;
+    --dark-blue: #5d688a;
+    --mid-blue: #748dae;
+    --light-blue: #a7aae1;
+    --blue-white: #ebd6fb;
+    --dark-pink: #f7a5a5;
+    --mid-pink: #f2aebb;
+    --light-pink: #f5cbcb;
+    --white-pink: #ffeaea;
+    --yellow: #ffdbb6;
+    --ivory: #fff8e7;
 }
 *{
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
-
 }
 
 /*type selectors*/
 html{
     padding: var(--xxlarge);
 }
+body{
+    background-image: url("images/wallpaper.gif");
+    background-size: cover;
+    color: var(--navy);
+}
 h1{
     font-family: var(--pixel);
+    font-size: var(--xxlarge);
 }
 p{
     font-family: var(--google);
 }
 
-/*id selectors*/
+/*profile window*/
 #profilePicture{
-    width: var(--xxxlarge);
-    height: var(--xxxlarge);
+    width: 180px;
+    height: 180px;
     border-radius: 100%
 }
 #profileContainer{
@@ -41,11 +59,45 @@ p{
     justify-content: center;
     overflow-y: auto;
     border: solid;
-    border-radius: var(--small);
+    border-radius: var(--large);
     border-width: var(--small);
-    border-color: black;
+    border-color: var(--light-pink);
     padding: var(--medium);
+    gap: var(--medium);
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-pink);
 }
 #profileText{
-    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 350px;
+    height: 180px;
+}
+
+/*top bar*/
+#topBar{
+    padding: var(--small);
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    background-color: rgba(245, 203, 203, 0.5);
+    backdrop-filter: blur(var(--small));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#topBar *{
+    background-color: var(--white-pink);
+    border-radius: var(--medium);
+    padding-left: var(--small);
+    padding-right: var(--small);
+    padding-top: var(--xsmall);
+    padding-bottom: var(xsmall);
 }
