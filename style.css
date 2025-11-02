@@ -84,9 +84,9 @@ p{
 #topBar{
     padding: var(--small);
     display: flex;
-    justify-content: space-between;
-    overflow: auto;
-    background-color: rgba(245, 203, 203, 0.5);
+    justify-content: center;
+    gap: var(--xxxlarge);
+    background-color: rgba(246, 203, 203, 0.5);
     backdrop-filter: blur(var(--small));
     position: fixed;
     top: 0;
@@ -94,7 +94,7 @@ p{
     width: 100%;
 }
 #topBar *{
-    background-color: var(--white-pink);
+    background-color: rgba(255, 234, 234, 0.6);
     border-radius: var(--medium);
     padding-left: var(--small);
     padding-right: var(--small);
