@@ -84,7 +84,7 @@ p{
 #topBar{
     padding: var(--small);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--xxxlarge);
     background-color: rgba(246, 203, 203, 0.5);
     backdrop-filter: blur(var(--small));
@@ -92,6 +92,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
+    align-items: center;
 }
 #topBar *{
     background-color: rgba(255, 234, 234, 0.6);
@@ -99,5 +100,8 @@ p{
     padding-left: var(--small);
     padding-right: var(--small);
     padding-top: var(--xsmall);
-    padding-bottom: var(xsmall);
+    padding-bottom: var(--xsmall);
+}
+#time{
+    padding-right: var(--small);
 }
