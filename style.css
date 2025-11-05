@@ -84,7 +84,7 @@ p{
 #topBar{
     padding: var(--small);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: var(--xxxlarge);
     background-color: rgba(246, 203, 203, 0.5);
     backdrop-filter: blur(var(--small));
@@ -104,4 +104,10 @@ p{
 }
 #time{
     padding-right: var(--small);
+}
+
+/*class selectors*/
+.windowWrapper{
+    cursor: pointer;
+    position: absolute;
 }
